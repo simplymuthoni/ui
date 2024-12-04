@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Utility
+# Cards
+# Common
+# Form
+# Navigations
+# Animations
+# Mobile Nav
+# Search Popup
+# Page Header
+# Google Map
+# Client Carousel
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Common
+--------------------------------------------------------------*/
+:root {
+  --zefxa-font: "DM Sans", sans-serif;
+  --zefxa-font-two: "Manrope", sans-serif;
+  --zefxa-font-three: 'reeyregular';
+  --zefxa-gray: #6c6b6f;
+  --zefxa-gray-rgb: 108, 107, 111;
+  --zefxa-white: #ffffff;
+  --zefxa-white-rgb: 255, 255, 255;
+  --zefxa-base: #f50963;
+  --zefxa-base-rgb: 245, 9, 99;
+  --zefxa-black: #1c1b1f;
+  --zefxa-black-rgb: 28, 27, 31;
+  --zefxa-extra: #f4f5f8;
+  --zefxa-extra-rgb: 244, 245, 248;
+}
