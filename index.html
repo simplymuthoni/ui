@@ -45,88 +45,177 @@
             }
         </style>
     </head>
-    <body>
-        <!-- Top Bar -->
-        <div class="top-bar d-flex justify-content-between align-items-center px-3">
-            <div>
-                <span>+00 (1234) 682 3705</span> |
-                <a href="mailto:needhelp@company.com">needhelp@company.com</a> |
-                <span>80 Brooklyn Golden Street UK</span>
-            </div>
-            <div>
-                <span>We Provide High Quality & Cost Effective Services</span>
-            </div>
-        </div>
     
         <!-- Main Header -->
-        <header class="main-header py-3">
-            <div class="container d-flex justify-content-between align-items-center">
-                <!-- Logo -->
-                <div class="logo d-flex align-items-center">
-                    <img src="../assets/favicons/android-chrome-512x512.png" alt="Zefxa Logo" style="width: 40px; height: 40px; margin-right: 10px;">
-                    <a href="index.html" class="text-decoration-none text-uppercase" style="color: #ff007c; font-weight: bold; font-size: 1.2rem;">Zefxa</a>
+        <body>
+            <!-- Top Bar -->
+            <div class="top-bar d-flex justify-content-between align-items-center px-4 py-2">
+                <div class="d-flex align-items-center gap-4">
+                    <span>+00 (1234) 682 3705</span>
+                    <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                    <span>80 Brooklyn Golden Street UK</span>
                 </div>
-                <!-- Navigation -->
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-                            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
-                                <li><a class="dropdown-item" href="#">Home 1</a></li>
-                                <li><a class="dropdown-item" href="#">Home 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                                <li><a class="dropdown-item" href="#">About</a></li>
-                                <li><a class="dropdown-item" href="#">FAQ</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-danger" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item" href="#">Service 1</a></li>
-                                <li><a class="dropdown-item" href="#">Service 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
-                                <li><a class="dropdown-item" href="#">Project 1</a></li>
-                                <li><a class="dropdown-item" href="#">Project 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
-                                <li><a class="dropdown-item" href="#">Blog Post 1</a></li>
-                                <li><a class="dropdown-item" href="#">Blog Post 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-    
-                <!-- Get Free Quote Button -->
-                <div class="d-flex align-items-center">
-                    <a href="#" class="btn btn-quote">Get Free Quote</a>
-                    <div class="right-design"></div>
+                <div>
+                    <span>We Provide High Quality & Cost Effective Services</span>
                 </div>
             </div>
-        </header>
+        
+            <!-- Main Header -->
+            <header class="main-header py-3">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <div class="logo d-flex align-items-center">
+                        <img src="../assets/images/favicons/android-chrome-512x512.png" alt="Zefxa Logo" style="width: 40px; height: 40px; margin-right: 10px; margin-left: 200px;">
+                        <a href="index.html" class="text-decoration-none text-uppercase" style="color: hsl(0, 0%, 100%); font-weight: bold; font-size: 1.2rem;">Zefxa</a>
+                    </div>
+        
+                    <!-- Navigation -->
+                    <nav class="d-flex align-items-center">
+                        <ul class="nav" style="margin-left:10px;">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home <span class="dropdown-icon ms-1">+</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                                    <li><a class="dropdown-item" href="#">Home 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages <span class="dropdown-icon ms-1">+</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                    <li><a class="dropdown-item" href="#">About</a></li>
+                                    <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center text-danger" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services <span class="dropdown-icon ms-1">+</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" href="#">Service 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Service 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Projects <span class="dropdown-icon ms-1">+</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                    <li><a class="dropdown-item" href="#">Project 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Project 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog <span class="dropdown-icon ms-1">+</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                                    <li><a class="dropdown-item" href="#">Blog Post 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Post 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+        
+                        <!-- Add Separator and Quote Button -->
+                        <div class="d-flex align-items-center ms-4">
+                            <span class="text-white mx-2" style="margin-left:20px; margin-right:20px;">|</span>
+                            <a href="#" class="btn btn-quote" style="margin-right: 200px;">Get Free Quote</a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        
+            <style>
+                /* Custom dropdown icon */
+                .dropdown-icon {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+        
+                /* Remove Bootstrap's default caret icon */
+                .dropdown-toggle::after {
+                    display: none;
+                }
+        
+                /* Top bar spacing */
+                .top-bar {
+                    background-color: #1c1c1c;
+                    color: #fff;
+                    font-size: 0.9rem;
+                }
+        
+                .top-bar a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+        
+                .main-header {
+                    background-color: #2a2a2a;
+                }
+        
+                .main-header .nav-link {
+                    color: #fff;
+                    font-weight: bold;
+                }
+        
+                .main-header .nav-link:hover {
+                    color: #ff007c;
+                }
+        
+                .btn-quote {
+                    background-color: #ff007c;
+                    color: #fff;
+                    font-weight: bold;
+                }
+        
+                .btn-quote:hover {
+                    background-color: #e6006b;
+                    color: #fff;
+                }
+        
+                .logo {
+                    color: #ff007c;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+            </style>
+        </body>
+        
 
     <!-- Main Content -->
     <main class="container my-5">
+        <!-- Hero Section -->
+<section class="hero-section text-center position-relative" style="background-color: #343a40; color: white; height: 650px;">
+    <!-- Background Image -->
+    <div class="position-absolute w-100 h-100">
+        <img src="../ui/assets/images/shapes/main-slider-shape-1.png" alt="Background Shape" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <!-- Overlay -->
+    <div class="overlay position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+    <!-- Content -->
+    <div class="content position-relative z-index-1 py-5">
+        <p class="text-muted mb-0" style="font-size: 0.9rem;">
+            <i class="bi bi-house-door"></i> Home — Services — App Development
+        </p>
+        <h1 class="display-4 fw-bold">App Development</h1>
+    </div>
+</section>
+
+    
         <!-- Introduction Section -->
         <section class="text-center mb-4">
-            <h2>App Development</h2>
             <p class="text-muted">
                 Need something changed or is there something not quite working the way you envisaged? Is your van a little old and tired and need refreshing? Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
         </section>
+    </main>
+    
 
         <!-- Description Section -->
         <section class="row mb-4">
