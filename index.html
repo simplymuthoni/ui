@@ -137,9 +137,13 @@
                                 <a class="nav-link dropdown-toggle d-flex align-items-center text-danger" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Services <span class="dropdown-icon ms-1">+</span>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                    <li><a class="dropdown-item" href="#">Service 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Service 2</a></li>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="line-height: 2;">
+                                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                                    <li><a class="dropdown-item" href="#">UI/UX Designing</a></li>
+                                    <li><a class="dropdown-item" href="#">App Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+                                    <li><a class="dropdown-item" href="#">Website Development</a></li>
+                                    <li><a class="dropdown-item" href="#">SEO & Content Writing</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -231,28 +235,70 @@
         </body>
         
 
-   <!-- Main Content -->
-    <main class="container my-5">
-        <!-- Hero Section -->
-        <section class="hero-section text-center position-relative" style="background-color: #343a40; color: white; height: 650px; overflow: hidden;">
-            <!-- Background Image -->
-            <div class="position-absolute w-100 h-100">
-                <img src="../assets/images/shapes/main-slider-shape-1.png" alt="Background Shape" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <!-- Overlay -->
-            <div class="overlay position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);"></div>
-            <!-- Content -->
-            <div class="content position-relative z-index-1 d-flex flex-column justify-content-center align-items-center h-100">
-                <p class="text-muted mb-2" style="font-size: 1rem;">
-                    <i class="bi bi-house-door"></i> <span style="color: #ff007c;">Home</span> — Services — App Development
-                </p>
-                <h1 class="display-4 fw-bold">App Development</h1>
-            </div>
-            <!-- Wave -->
-            <div class="wave position-absolute w-100" style="height: 150px; background: linear-gradient(to bottom right, #ff007c 50%, #fff 50%); bottom: 0; transform: skewY(-4deg); transform-origin: top left;"></div>
-        </section>
-    </main>
+<!-- Main Content -->
+<main class="main-section" style="padding: 50px; background-color: #1d1d1d; height: 650px; position: relative; overflow: hidden;">
+    <div class="container">
+        <!-- Background Image 1 (Bottom Left) -->
+        <div class="position-absolute" style="left: 0; bottom: 0;">
+            <img src="../assets/images/shapes/main-slider-shape-1.png" alt="Background Shape" style="width: 450px; height: auto; object-fit: cover;">
+        </div>
 
+        <!-- Background Image 2 (Bottom Right) -->
+        <div class="position-absolute" style="right: 0; top: 0;">
+            <img src="../assets/images/shapes/main-slider-shape-2.png" alt="Pink Linear Waves" style="width: auto; height: 450; object-fit: contain;">
+        </div>
+
+         <!-- Background Image 3 (Bottom Right) -->
+         <div class="position-absolute" style="right: 0; bottom: 0;">
+            <img src="../assets/images/shapes/main-slider-shape-3.png" alt="Top Shape" style="width: 450px; height: auto; object-fit: cover;">
+        </div>
+
+        <!-- Content -->
+        <div class="content position-relative z-index-1 h-100" style="color: white;">
+            <!-- Breadcrumb and Heading -->
+            <div style="position: absolute; bottom: 100px; left: 50px; text-align: left; background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 8px;">
+            <!-- Breadcrumb -->
+            <p class="text-muted mb-2" style="font-size: 1rem; margin-bottom: 10px; color: #ccc; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);">
+                <i class="bi bi-house-door" style="color: #ff007c; margin-right: 5px;"></i>
+                <span style="font-weight: bold;">Home — Services — App Development</span>
+            </p>
+
+            <!-- Heading -->
+            <h1 class="display-4 fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);">
+                App Development
+            </h1>
+            </div>
+        </div>
+</main>
+
+
+
+    <!-- Styles -->
+<style>
+    /* Wave Styling */
+    .wave {
+        transform: scaleY(-1);
+    }
+
+    /* Custom Header Navigation Styles */
+    .main-header {
+        background-color: #2a2a2a;
+    }
+
+    .btn-quote {
+        background-color: #ff007c;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .btn-quote:hover {
+        background-color: #e6006b;
+    }
+
+    .hero-section .content h1 {
+        font-size: 3rem;
+    }
+</style>
 
 </main>
         <section class="services-section" style="padding: 50px 0; background-color: #f9f9f9;">
@@ -383,7 +429,6 @@
         </section>
     </main>
     
-
             <!-- Let's Start Section -->
         <section class="lets-start-section" style="background-color: hsl(0, 0%, 28%); height:300px; padding: 50px 0;">
             <div class="container text-center">
