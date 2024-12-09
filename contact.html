@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Header Design</title>
-        <!-- Bootstrap 5 CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">        <style>
+             
             .top-bar {
                 background-color: #1c1c1c;
                 color: #fff;
@@ -43,6 +42,48 @@
                 font-weight: bold;
                 font-size: 1.5rem;
             }
+              /* Hero Section Styling */
+        .hero-section {
+            position: relative;
+            background: #343a40;
+            color: #fff;
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        .hero-section .content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .hero-section p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
         </style>
     </head>
     
@@ -66,7 +107,7 @@
                     <!-- Logo -->
                     <div class="logo d-flex align-items-center">
                         <img src="../assets/images/favicons/android-chrome-512x512.png" alt="Zefxa Logo" style="width: 40px; height: 40px; margin-right: 10px; margin-left: 200px;">
-                        <a href="contact.html" class="text-decoration-none text-uppercase" style="color: hsl(0, 0%, 100%); font-weight: bold; font-size: 1.2rem;">Zefxa</a>
+                        <a href="index.html" class="text-decoration-none text-uppercase" style="color: hsl(0, 0%, 100%); font-weight: bold; font-size: 1.2rem;">Zefxa</a>
                     </div>
         
                     <!-- Navigation -->
@@ -77,8 +118,7 @@
                                     Home <span class="dropdown-icon ms-1">+</span>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="homeDropdown">
-                                    <li><a class="dropdown-item" href="#">Home 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Home 2</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Home Page</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -94,9 +134,13 @@
                                 <a class="nav-link dropdown-toggle d-flex align-items-center text-danger" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Services <span class="dropdown-icon ms-1">+</span>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                    <li><a class="dropdown-item" href="#">Service 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Service 2</a></li>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="line-height: 3;">
+                                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                                    <li><a class="dropdown-item" href="#">UI/UX Designing</a></li>
+                                    <li><a class="dropdown-item" href="#">App Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+                                    <li><a class="dropdown-item" href="#">Website Development</a></li>
+                                    <li><a class="dropdown-item" href="#">SEO & Content Writing</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -124,7 +168,7 @@
         
                         <!-- Add Separator and Quote Button -->
                         <div class="d-flex align-items-center ms-4">
-                            <span class="text-white mx-2" style="margin-left:20px; margin-right:20px;">|</span>
+                            <span class="text-white mx-2">|</span>
                             <a href="#" class="btn btn-quote" style="margin-right: 200px;">Get Free Quote</a>
                         </div>
                     </nav>
@@ -186,161 +230,302 @@
                 }
             </style>
         </body>
-        
 
-    <!-- Main Content -->
-    <main class="container my-5">
-        <!-- Hero Section -->
-    <section class="hero-section text-center position-relative" style="background-color: #343a40; color: white; height: 650px;">
-    <!-- Background Image -->
-    <div class="position-absolute w-100 h-100">
-        <img src="../ui/assets/images/shapes/main-slider-shape-1.png" alt="Background Shape" style="width: 100%; height: 100%; object-fit: cover;">
-    </div>
-    <!-- Overlay -->
-    <div class="overlay position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);"></div>
-    <!-- Content -->
-    <div class="content position-relative z-index-1 py-5">
-        <p class="text-muted mb-0" style="font-size: 0.9rem;">
-            <i class="bi bi-house-door"></i> Home — Services — App Development
-        </p>
-        <h1 class="display-4 fw-bold">App Development</h1>
-    </div>
-    </section>
-
-    
-        <!-- Introduction Section -->
-        <section class="text-center mb-4">
-            <p class="text-muted">
-                Need something changed or is there something not quite working the way you envisaged? Is your van a little old and tired and need refreshing? Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
-        </section>
-    </main>
-    
-
-        <!-- Description Section -->
-        <section class="row mb-4">
-            <div class="col-md-6">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-            </div>
-            <div class="col-md-6">
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section>
-            <h3 class="text-center mb-4">Our Services</h3>
-            <div class="row">
-                <div class="col-lg-4 mb-3">
-                    <div class="card text-center p-3 shadow-sm">
-                        <h5>Financial Planning</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-3">
-                    <div class="card text-center p-3 shadow-sm">
-                        <h5>Marketing Options</h5>
-                        <p>How to improve your business rates.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-3">
-                    <div class="card text-center p-3 shadow-sm">
-                        <h5>Great Skilled Consultant</h5>
-                        <p>Providing expert solutions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="text-center my-5">
-            <h3>Need Help?</h3>
-            <p>Prefer speaking with a human? Call our corporate office, and we’ll connect you with a team member who can help.</p>
-            <p class="fw-bold">Phone: 01-666 444 999</p>
-        </section>
-    </main>
-
-    <footer class="footer py-5" style="background-color: #1c1c1c; color: #fff; height: 519px; width: 100%;">
+        <!-- Main Content -->
+    <main class="main-section" style="padding: 50px; background-color: #1d1d1d; height: 650px; position: relative; overflow: hidden;">
         <div class="container">
-            <div class="row">
-                <!-- About Section -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="d-flex align-items-center" style="margin-left: 200px;">
-                        <img src="../assets/images/favicons/android-chrome-512x512.png" alt="Zefxa Logo" style="width: 40px; height: 40px; margin-right: 10px;">
-                        <h5 class="text-uppercase fw-bold mb-0">Zefxa</h5>
-                    </div>
-                    <p class="mt-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                    </p>
-                    <h6 class="mt-4">Follow On</h6>
-                    <div class="social-icons">
-                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-    
-                <!-- Useful Links Section -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5 class="text-uppercase fw-bold" style="margin-bottom: 30px;">Useful Link</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Meet the Team</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Services List</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Simple Process</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Latest News</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Newsletter Section -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5 class="text-uppercase fw-bold" style="margin-bottom: 30px;">Newsletter</h5>
-                    <p>Subscribe to our newsletter & keep up with all the latest Zefxa.</p>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Enter Email Address" aria-label="Email">
-                        <!-- <button class="btn btn-primary" type="button">Subscribe</button> -->
-                    </div>
-                    <h6 class="mt-3">Call Anytime</h6>
-                    <p class="fw-bold">+124 556 890 08</p>
-                </div>
-    
-                <!-- Gallery Section -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5 class="text-uppercase fw-bold" style="margin-bottom: 30px;">Gallery</h5>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid">
-                        </div>
-                        <div class="col-4">
-                            <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid">
-                        </div>
-                        <div class="col-4">
-                            <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid">
-                        </div>
-                        <div class="col-4">
-                            <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid">
-                        </div>
-                        <div class="col-4">
-                            <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid">
-                        </div>
-                        <div class="col-4">
-                            <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-    
-            <!-- Copyright Section -->
-            <div class="text-center mt-4" style="margin-top: 20px;" >
-                <hr style="border-top: 1px solid #fff; opacity: 0.2; width: 80%; margin: auto;">
-                <p class="mt-3 mb-0">Copyright © 2024 Zefxa. All Rights Reserved.</p>
+        <!-- Background Image 1 (Bottom Left) -->
+        <div class="position-absolute" style="left: 0; bottom: 0;">
+            <img src="../assets/images/shapes/main-slider-shape-1.png" alt="Background Shape" style="width: 450px; height: auto; object-fit: cover;">
+        </div>
+
+        <!-- Background Image 2 (Bottom Right) -->
+        <div class="position-absolute" style="right: 0; top: 0;">
+            <img src="../assets/images/shapes/main-slider-shape-2.png" alt="Pink Linear Waves" style="width: auto; height: 450; object-fit: contain;">
+        </div>
+
+         <!-- Background Image 3 (Bottom Right) -->
+         <div class="position-absolute" style="right: 0; bottom: 0;">
+            <img src="../assets/images/shapes/main-slider-shape-3.png" alt="Top Shape" style="width: 450px; height: auto; object-fit: cover;">
+        </div>
+
+        <!-- Content -->
+        <div class="content position-relative z-index-1 h-100" style="color: white;">
+            <!-- Breadcrumb and Heading -->
+            <div style="position: absolute; bottom: 100px; left: 50px; text-align: left; background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 8px;">
+            <!-- Breadcrumb -->
+            <p class="text-muted mb-2" style="font-size: 1rem; margin-bottom: 10px; color: #ccc; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);">
+                <i class="bi bi-house-door" style="color: #ff007c; margin-right: 5px;"></i>
+                <span style="font-weight: bold;">Home — Contact Us</span>
+            </p>
+
+            <!-- Heading -->
+            <h1 class="display-4 fw-bold" style="text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);">
+               Contact Us
+            </h1>
             </div>
         </div>
-    </footer>
-    
-    
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </main>
+
+    <title>Consultation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .consultation-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #fff;
+            position: relative;
+        }
+
+        .consultation-left {
+            width: 40%;
+            background-color: #e6e6e6;
+            height: 593px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .consultation-right {
+            width: 60%;
+            padding: 30px;
+            position: relative;
+        }
+
+        .consultation-right h3 {
+            color: #ff007c;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .consultation-right h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-group {
+            width: 48%;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff007c;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #e0006c;
+        }
+
+        .pink-background {
+            position: absolute;
+            width: 200px;
+            height: 593px;
+            background-color: #ff007c;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            clip-path: polygon(100% 0, 100% 100%, 80% 100%);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="consultation-section">
+    <!-- Left Placeholder -->
+    <div class="consultation-left">
+        338X593
+    </div>
+
+    <!-- Right Form Section -->
+    <div class="consultation-right">
+        <h3>Contact Now</h3>
+        <h1>Request for Our Free Consultation</h1>
+        <form>
+            <div class="form-container">
+                <!-- Form Fields -->
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Select Age</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-45">36-45</option>
+                        <option value="46+">46+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Select Subject</option>
+                        <option value="marketing">Digital Marketing</option>
+                        <option value="design">UI/UX Design</option>
+                        <option value="development">App Development</option>
+                    </select>
+                </div>
+                <div class="form-group" style="width: 100%;">
+                    <button type="submit" class="submit-button">Submit Message</button>
+                </div>
+            </div>
+            <p class="footer-text">* After sending request, we'll contact you for more details about charter.</p>
+        </form>
+    </div>
+
+    <!-- Pink Background -->
+    <div class="pink-background"></div>
+</div>
+  <!-- Let's Start Section -->
+  <section class="lets-start-section" style="background-color: hsl(0, 0%, 28%); height:300px; padding: 50px 0;">
+    <div class="container text-center">
+    <div class="row align-items-end justify-content-between">
+        <div class="col-md-8">
+        <h2 style="color: #fff; font-size: 28px; font-weight: 600; line-height: 1.5; margin-bottom: 20px; margin-top:20px; align-items: end;">
+            Let's discuss about how we can help<br> make your business better
+        </h2>
+        </div>
+        <div class="col-md-2">
+        <a href="#" class="btn btn-pink" style="
+            background-color: #ff007a;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left:50px;">
+            Let's Start
+        </a>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer class="footer py-5" style="background-color: #1c1c1c; color: #fff; height: 519px; width: 100%;">
+<div class="container d-flex justify-content-between align-items-end" style="height: 100%; flex-wrap: wrap;">
+    <div class="row w-100" style="margin-top: 20px;">
+        <!-- About Section -->
+        <div class="col-lg-3 col-md-6 mb-4 ">
+            <div class="d-flex align-items-left ">
+                <img src="../assets/images/favicons/android-chrome-512x512.png" alt="Zefxa Logo" style="width: 40px; height: 40px;">
+                <h5 class="text-uppercase fw-bold mb-0">Zefxa</h5>
+            </div>
+            <p class="mt-4" style="color: #b3b3b3; font-size: 14px; line-height: 1.6;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <h6 class="text-uppercase fw-bold mb-0">Follow On</h6>
+            <div class="social-icons">
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Useful Links Section -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="text-uppercase fw-bold" style="margin-bottom: 30px; color: #fff;">Useful Link</h5>
+            <ul class="list-unstyled" style="color: #b3b3b3; line-height: 1.6; font-size: 14px; margin-bottom: 20px;">
+                <li><a href="#" class="text-white text-decoration-none" >Meet the Team</a></li>
+                <li><a href="#" class="text-white text-decoration-none" >Services List</a></li>
+                <li><a href="#" class="text-white text-decoration-none" >Simple Process</a></li>
+                <li><a href="#" class="text-white text-decoration-none" >Latest News</a></li>
+                <li><a href="#" class="text-white text-decoration-none" >Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="col-lg-3 col-md-6 mb-4 ">
+            <h5 class="text-uppercase fw-bold" style=" color: #fff; margin-bottom: 30px;">Newsletter</h5>
+            <p style="color: #b3b3b3; font-size: 14px; line-height: 1.6;">Subscribe to our newsletter & keep up with all the latest Zefxa.</p>
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Enter Email Address" aria-label="Email" style="color:#b3b3b3">
+            </div>
+            <h6 class="mt-3" style="color: #b3b3b3;">Call Anytime</h6>
+            <p class="fw-bold" style="color: #fff; font-size:26px;">+124 556 890 08</p>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="col-lg-3 col-md-6 mb-4 ">
+            <h5 class="text-uppercase fw-bold" style="margin-bottom: 30px;">Gallery</h5>
+            <div class="row g-2 justify-content-center">
+                <div class="col-4">
+                    <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid" style ="height:90px; width:90px;">
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid" style ="height:90px; width:90px;">
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid" style ="height:90px; width:90px;">
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid" style ="height:90px; width:90px;">
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid" style ="height:90px; width:90px;">
+                </div>
+                <div class="col-4">
+                    <img src="../assets/images/blog/comment-1-1.jpg" alt="Gallery Image" class="img-fluid" style ="height:90px; width:90px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="text-center mt-4" style="margin-top: 20px; width:100%;">
+        <hr style="border-top: 1px solid #fff; opacity: 0.2; width: 100%; margin: auto;">
+        <p class="mt-3 mb-0">Copyright © 2024 Zefxa. All Rights Reserved.</p>
+    </div>
+</div>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
