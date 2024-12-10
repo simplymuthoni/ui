@@ -235,50 +235,47 @@
         
 
 <!-- Main Content -->
-<main class="main-section" style="padding: 50px; background-color: #1d1d1d; height: 650px; position: relative; overflow: hidden;">
-    <div class="container">
+<main class="main-section" style="padding: 50px; background-color: #1d1d1d; height: 650px; width:1920; position: relative; overflow: hidden;">
+    <div class="container position-relative h-100">
         <!-- Background Image 1 (Bottom Left) -->
-        <div class="position-absolute" style="left: 0; bottom: 0;">
-            <img src="../assets/images/shapes/main-slider-shape-1.png" alt="Background Shape" style="width: 450px; height: auto; object-fit: cover;">
+        <div class="position-absolute" style="left: 0; bottom: 0; width: 100%; height: auto;">
+            <img src="../assets/images/shapes/main-slider-shape-1.png" alt="Background Shape" style="object-fit: cover;">
         </div>
 
-        <!-- Background Image 2 (Bottom Right) -->
-        <div class="position-absolute" style="right: 0; top: 0;">
-            <img src="../assets/images/shapes/main-slider-shape-2.png" alt="Pink Linear Waves" style="width: auto; height: 450; object-fit: contain;">
+        <!-- Background Image 2 (Top Right) -->
+        <div class="position-absolute" style="right: 0; top: 0; width: 450px; height: auto;">
+            <img src="../assets/images/shapes/main-slider-shape-2.png" alt="Pink Linear Waves" style="object-fit: contain;">
         </div>
 
-         <!-- Background Image 3 (Bottom Right) -->
-         <div class="position-absolute" style="right: 0; bottom: 0;">
-            <img src="../assets/images/shapes/main-slider-shape-3.png" alt="Top Shape" style="width: 450px; height: auto; object-fit: cover;">
+        <!-- Background Image 3 (Bottom Right) --> 
+        <div class="position-absolute" style="right: 0; bottom: 0; width: 650px; height: auto;">
+            <img src="../assets/images/shapes/main-slider-shape-3.png" alt="Top Shape" style="object-fit: cover;">
         </div>
 
-       <!-- Content -->
-       <div class="content position-relative z-index-1 h-100" style="color: white;">
-        <!-- Breadcrumb and Heading -->
-        <div style="position: absolute; bottom: 100px; left: 50px; text-align: left; background-color: rgba(0, 0, 0, 0.75); padding: 20px; border-radius: 8px; max-width: 500px;">
-            <!-- Breadcrumb -->
-            <p class="text-muted mb-2" style="font-size: 1rem; color: #ffffff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);">
-                <i class="bi bi-house-door" style="color: #ff007c; margin-right: 5px;"></i>
-                <span style="font-weight: bold;">Home — Services — App Development</span>
-            </p>
+        <!-- Content -->
+        <div class="content position-relative z-index-1 h-100" style="color: white;">
+            <!-- Breadcrumb and Heading -->
+            <div style="position: absolute; bottom: 100px; left: 50px; text-align: left; margin-left: 100px; padding: 20px; border-radius: 8px; max-width: 500px;">
+                <!-- Breadcrumb -->
+                <p class="text-muted mb-2" style="font-size: 1rem; color: #ffffff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);">
+                    <img src="../assets/images/shapes/section-title-tagline-shape.png" alt="Section Tagline">
+                    <span style="font-weight: bold; color:#fff;">Home — Services — App Development</span>
+                </p>
 
-            <!-- Heading -->
-            <h1 class="display-4 fw-bold" style="color: #f82020; text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);">
-                App Development
-            </h1>
+                <!-- Heading -->
+                <h1 class="display-4 fw-bold" style="color: #fff; text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);">
+                    App Development
+                </h1>
+            </div>
+
+            <!-- Edge Wave -->
+            <div class="curve"></div>
         </div>
-        </div>
+    </div>
 </main>
 
-
-
     <!-- Styles -->
-<style>
-    /* Wave Styling */
-    .wave {
-        transform: scaleY(-1);
-    }
-
+    <style>
     /* Custom Header Navigation Styles */
     .main-header {
         background-color: #2a2a2a;
